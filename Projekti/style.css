@@ -1,0 +1,70 @@
+
+body {
+    background-image: url("maisema.jpg");
+    background-size: 720px 480px;
+}
+
+
+.lista2 {
+    font-weight: bold;
+}
+
+.li1 li {
+    font-size: 18px;
+    font-family: Georgia;
+    background-color:rgb(3, 172, 233);
+    list-style: square;
+}
+
+#list1 {
+    color:red;
+    font-weight: bold;
+}
+
+#list2 {
+    color: orange;
+    font-weight: bold;
+}
+
+#list3{
+    color: yellow;
+    font-weight: bold;
+}
+
+#list4{
+    color:green;
+    font-weight: bold;
+}
+
+#list5 {
+    color:blue;
+    font-weight: bold;
+}
+
+h1.firstChapter{
+    color: green;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.row .label{
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish {
+    flex: 1;
+    display: center;
+    justify-content: center;
+}
+
