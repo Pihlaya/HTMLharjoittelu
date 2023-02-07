@@ -1,18 +1,53 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("ELEGANT TYPEWRITER Regular.ttf");
+}
+
+* {
+    font-family: myFirstFont;
+}
+#picFly:hover {
+    width: 4em;
+    height: 4em;
+    transform: rotate(180deg);
+    transition: 120ms;
+    background-color: rgba(46, 150, 65, 0.577);
+    border-radius: 40px;
+    box-shadow: inset 4px 4px 4px rgb(111, 223, 19);
+    padding: 10px;
+}
+
+figcaption {
+    font-family: sans-serif;
+    color: rgba(205, 196, 203, 0.535);
+    font-weight: bold;
+}
+figcaption:hover {
+   font-size: 2em;
+   font-family: myFirstFont;
+   transition: 70ms;
+   opacity: 50%;
+   color: rgb(255, 0, 0, 1);
+}
 
 header {
-    text-align: center;
-    color:rgb(142, 233, 124);
+    color: rgb(2, 13, 0);
     font-family: Verdana;
     grid-area: head;
-    
-   
+
+
     position: sticky;
     top: 20px;
-    
+
 }
-header #text{
-    background-color: rgba(24, 2, 2, 0.332);
+
+
+
+header #text {
+    background-color: rgba(237, 223, 30, 0.414);
     border-radius: 20px;
+    padding-top: 8px;
+    text-align: center;
 }
 
 body {
@@ -20,48 +55,30 @@ body {
     background-size: 2000px 1600px;
     background-position: center;
 
-     font-size: 34c;
+    font-size: 34c;
 
-       
-    
-        height: 200px; 
-        
-    
-        grid-template-areas: "head head" 
-    
-                             "nav  main" 
-    
-                             "footer  footer"; 
-    
-        grid-template-rows: 30px 1fr 30px; 
-    
-        grid-template-columns: 500px 4fr; 
-    
-      
+
+
+    height: 200px;
+
+
+    grid-template-areas: "head head"
+
+        "nav  main"
+
+        "footer  footer";
+
+    grid-template-rows: 30px 1fr 30px;
+
+    grid-template-columns: 500px 4fr;
+
+
 }
 
-.lista2 {
-    color: rgb(6, 93, 93);
-    font-weight: bold;
-    font-family: Papyrus;
-    background-color: aquamarine; 
-    border-radius: 15px;
-    padding: 1px;
-    border: 2px solid rgb(3, 73, 61);
-    box-shadow: inset 10px 10px 7px rgba(10, 238, 151, 0.378);
-    
-}
-
-.lista2:hover{
-    background-color: bisque;
-    box-shadow: inset  10px 10px 40px  rgba(29, 38, 30, 0.783);
-    border: 4px solid black;
-    
-    padding-left: 50px;
-}
 .li1 li {
-    font-size: 16px;
-    font-family: Trebuchet MS;
+    font-size: 26px;
+    font-weight: 200;
+    font-family: myFirstFont;
     list-style: square;
     background-color: rgb(0, 0, 0);
     border-radius: 3px;
@@ -69,83 +86,93 @@ body {
     padding-left: 39px;
     padding-bottom: 5px;
     padding-top: 5px;
-    box-shadow: inset 2px 2px 2px  rgba(0, 255, 47, 0.378);
-    
+    box-shadow: inset 2px 2px 2px rgba(0, 255, 47, 0.378);
+
 }
 
 #list1 {
-    color:rgb(254, 60, 60);
+    color: rgb(254, 60, 60);
     font-weight: bold;
 }
-#list1:hover{
-    box-shadow: inset 2px 2px 10px rgba(178, 193, 8, 0.688);
+
+#list1:hover {
+    box-shadow: inset 2px 2px 10px rgba(233, 237, 194, 0.688);
     border: 4px solid rgba(0, 0, 0, 0.813);
     background-color: black;
     color: whitesmoke;
-    
+    text-shadow: 6px 6px 4px rgba(0, 128, 0, 0.65);
+
     padding: 10 0;
 }
 
 #list2 {
     color: orange;
     font-weight: bold;
+
 }
-#list2:hover{
-    box-shadow: inset 2px 2px 10px rgba(178, 193, 8, 0.688);
+
+#list2:hover {
+    box-shadow: inset 2px 2px 10px rgba(233, 237, 194, 0.688);
     border: 4px solid rgba(0, 0, 0, 0.813);
     background-color: black;
     color: whitesmoke;
-    
+    text-shadow: 6px 6px 4px rgba(0, 128, 0, 0.65);
     padding: 10 0;
 }
 
-#list3{
+#list3 {
     color: rgb(227, 252, 84);
     font-weight: bold;
 }
-#list3:hover{
-    box-shadow: inset 2px 2px 10px rgba(178, 193, 8, 0.688);
+
+#list3:hover {
+    box-shadow: inset 2px 2px 10px rgba(233, 237, 194, 0.688);
     border: 4px solid rgba(0, 0, 0, 0.813);
     background-color: black;
     color: whitesmoke;
-    
+    text-shadow: 6px 6px 4px rgba(0, 128, 0, 0.65);
     padding: 10 0;
 }
 
-#list4{
-    color:rgba(68, 230, 68, 0.986);
+#list4 {
+    color: rgba(68, 230, 68, 0.986);
     font-weight: bold;
 }
-#list4:hover{
-    box-shadow: inset 2px 2px 10px rgba(178, 193, 8, 0.688);
+
+#list4:hover {
+    box-shadow: inset 2px 2px 10px rgba(233, 237, 194, 0.688);
     border: 4px solid rgba(0, 0, 0, 0.813);
     background-color: black;
     color: whitesmoke;
-    
+    text-shadow: 6px 6px 4px rgba(0, 128, 0, 0.65);
     padding: 10 0;
 }
 
 #list5 {
-    color:rgb(0, 186, 238);
+    color: rgb(0, 186, 238);
     font-weight: bold;
 }
-#list5:hover{
-    box-shadow: inset 2px 2px 10px rgba(178, 193, 8, 0.688);
+
+#list5:hover {
+    box-shadow: inset 2px 2px 10px rgba(233, 237, 194, 0.688);
     border: 4px solid rgba(0, 0, 0, 0.813);
     background-color: black;
     color: whitesmoke;
-  
+    text-shadow: 6px 6px 4px rgba(0, 128, 0, 0.65);
     padding: 10 0;
 }
 
-h1.firstChapter{
+h1.firstChapter {
     color: black;
     background-color: azure;
-    border-radius: 11px;
-    font-family: Papyrus;
+    padding-top: 6px;
+    padding-left: 8px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: myFirstFont;
 }
 
-h1.firstChapter:hover{
+h1.firstChapter:hover {
     box-shadow: inset 2px 2px 10px rgba(178, 193, 8, 0.688);
     border: 4px solid rgba(0, 0, 0, 0.813);
     background-color: black;
@@ -153,12 +180,33 @@ h1.firstChapter:hover{
     text-align: center;
     padding: 10 0;
 }
+
+.lista2 {
+    color: rgb(6, 93, 93);
+    font-size: 26px;
+    font-family: Papyrus;
+    background-color: aquamarine;
+    border-radius: 15px;
+
+    padding: 10px 37px;
+    border: 2px solid rgb(3, 73, 61);
+    box-shadow: inset 10px 10px 7px rgba(10, 238, 151, 0.378);
+
+}
+
+.lista2:hover {
+    background-color: bisque;
+    box-shadow: inset 10px 10px 40px rgba(29, 38, 30, 0.783);
+    border: 4px solid black;
+    padding-left: 50px;
+}
+
 .row {
     display: flex;
     align-items: stretch;
 }
 
-.row .label{
+.row .label {
     flex: 0 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -175,4 +223,3 @@ h1.firstChapter:hover{
     display: center;
     justify-content: center;
 }
-
